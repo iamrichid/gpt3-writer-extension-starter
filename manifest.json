@@ -1,6 +1,6 @@
 {
-  "name": "GPT-3 Writer",
-  "description": "Write a blog post in the style of your favorite thinker anywhere!",
+  "name": "AI President",
+  "description": "Chat with me your President",
   "version": "1.0",
   "manifest_version": 3,
   "icons": {
@@ -12,5 +12,13 @@
   "action": {
     "default_popup": "index.html",
     "default_title": "Generate blog post"
-  }
+  },
+  "background": {
+    "service_worker": "scripts/contextMenuServiceWorker.js"
+  },
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage"
+  ]
 }
